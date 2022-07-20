@@ -1,4 +1,5 @@
 import { Typography } from '@mui/material'
+import Button from '@mui/material/Button';
 import React from 'react'
 import Image1 from '../../img/work-1.jpg'
 import Image2 from '../../img/work-2.jpg'
@@ -79,7 +80,7 @@ export default function Projects(){
               <div className="work-img">
                 <img src={item.imageSource} alt="" className="img-fluid"/>
               </div>
-           
+              </a>
               <div className="work-content">
                 <div className="row">
                   <div >
@@ -90,12 +91,12 @@ export default function Projects(){
                   </div>
                   
                     <div className="w-like">
-                      <span className="ion-ios-plus-outline"></span>
+                    <span className="ion-ios-plus-outline" ></span>
                     </div>
                   
                 </div>
               </div>
-              </a>
+             
           </div>
         </div>
             )

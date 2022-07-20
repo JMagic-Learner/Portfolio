@@ -1,18 +1,28 @@
-import React from 'react'
+import React ,{useState,useEffect} from 'react'
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
+
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Link from '@mui/material/Link';
-import { Grid } from '@mui/material';
+
+import { Grid, ThemeProvider } from '@mui/material';
+
+
 
 export default function Navigation() {
+const [ChangePalette,setChangePalette] = useState("primary")
+const [VerticalLocation,setVerticalLocation] = useState("Initial")
+
+useEffect(()=>{
+  console.log('navigation has loaded');
+}, [])
+
     return  (
-      <nav className=" fixed-top" id="mainNav">
-        
+
+    <nav className=" fixed-top" id="mainNav">
+  
     <AppBar position="relative">
   
 
@@ -20,18 +30,15 @@ export default function Navigation() {
       <IconButton
         size="large"
         edge="start"
-        color="inherit"
+        color={ChangePalette}
         aria-label="menu"
         sx={{ mr: 1 }}
       >
         <MenuIcon />
       </IconButton>
    
-      {/* <Button className="navbar-brand js-scroll" variant="h5" component="div"  href="#page-top" sx={{ flexGrow: 1 }}>
-        JASON MA
-      </Button> */}
       
-      <Grid  container spacing={1} align="center" xs={12} sm={12} md={12}>
+      <Grid  container spacing={1} align="center">
         {/* flexgrow specifically applies to the following buttons */}
       
         <Grid className="nav-item" item xs={6} sm={3} md={2}>

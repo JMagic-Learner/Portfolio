@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+
+
 import Navigation from './components/Navigation'
 import Introduction from './components/Introduction'
 import About from './components/About';
@@ -8,10 +10,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      
       <Navigation/>
         <Introduction/>
         <About/>
@@ -31,6 +35,7 @@ function App() {
         >
           Learn React
         </a> */}
+       
       </header>
     </div>
   );

@@ -419,7 +419,7 @@ h6 {
 //--//-->   NAVBAR
 ======================================*/
 
-/* .navbar-b {
+.navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
   padding-top: 1.563rem;
@@ -560,9 +560,9 @@ h6 {
   background-color: #0078ff;
 }
 
-/*--/ Hamburger Navbar /--*/
+ /* --/ Hamburger Navbar /-- */
 
-/* .navbar-toggler {
+ .navbar-toggler {
   position: relative;
 }
 
@@ -613,7 +613,7 @@ h6 {
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
   opacity: 0.9;
-} */ 
+}  
 
 .align-right{
   margin-left:10%;
