@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
+import ColorsTimeline from './components/Timeline';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <About/>
         <Services/>
         <Projects/>
+        <ColorsTimeline/>
         <Contact/>
         <Footer/>
         {/* <img src={logo} className="App-logo" alt="logo" />
