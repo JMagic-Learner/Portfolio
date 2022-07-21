@@ -11,47 +11,47 @@ import Image6 from '../../img/work-6.jpg'
 export default function Projects(){
 
     let HTMLarray = [
+      {
+        title:"Stepper",
+        imageSource: `${Image3}`,
+        category:"Internal Component Library",
+        date:"13 June. 2022",
+        link:""
+      },
+      {
+        title:"MortgageFlex LOS",
+        imageSource: `${Image4}`,
+        category:"Loan Origination Software",
+        date:"10 May 2021",
+        link:""
+      },
         {
           title: "Zenith Highlight",
           imageSource: `${Image1}`,
           category:"A hobby website",
-          date:"13 July. 2021",
+          date:"13 December. 2021",
           link:"https://zenithhighlight.herokuapp.com/"
         },
         {
           title:"Historian",
           imageSource: `${Image2}`,
           category:"Web Design",
-          date:"18 January. 2021",
+          date:"4 April. 2020",
           link:"https://historian-timeline.herokuapp.com/"
         },
-        {
-            title:"Loreda Cuno Nere",
-            imageSource: `${Image3}`,
-            category:"Web Design",
-            date:"18 Sep. 2018",
-            link:"https://zenithhighlight.herokuapp.com/"
-          },
           {
-            title:"Loreda Cuno Nere",
-            imageSource: `${Image4}`,
-            category:"Web Design",
-            date:"18 Sep. 2018",
-            link:"https://zenithhighlight.herokuapp.com/"
-          },
-          {
-            title:"Loreda Cuno Nere",
+            title:"CMA Generator",
             imageSource: `${Image5}`,
-            category:"Web Design",
-            date:"18 Sep. 2018",
-            link:"https://zenithhighlight.herokuapp.com/"
+            category:"Mobile Application",
+            date:"14 Jan. 2020",
+            link:""
           }
           , {
-            title:"Loreda Cuno Nere",
+            title:"Passenger BillBoard",
             imageSource: `${Image6}`,
-            category:"Web Design",
-            date:"18 Sep. 2018",
-            link:"https://zenithhighlight.herokuapp.com/"
+            category:"Commercial Design",
+            date:"25 April. 2018",
+            link:""
           }
     ]
 

@@ -19,6 +19,39 @@ useEffect(()=>{
   console.log('navigation has loaded');
 }, [])
 
+useEffect(()=>{
+  setChangePalette("secondary")
+},[VerticalLocation])
+
+window.onscroll = console.log("Scrolling")
+
+let HTMLarray = [
+  {
+    title: "Home",
+    link:"#home"
+  },
+  {
+    title:"About",
+    link:"#about"
+  },
+  {
+      title:"Services",
+      link:"#services"
+    },
+    {
+      title:"Projects",
+      link:"#work"
+    },
+    {
+      title:"Contact",
+      link:"#contact"
+    }
+    , {
+      title:"Antra",
+      link:"https://antra.com"
+    }
+]
+
     return  (
 
     <nav className=" fixed-top" id="mainNav">
@@ -40,25 +73,31 @@ useEffect(()=>{
       
       <Grid  container spacing={1} align="center">
         {/* flexgrow specifically applies to the following buttons */}
-      
-        <Grid className="nav-item" item xs={6} sm={3} md={2}>
+      {HTMLarray.map((item)=>{
+        return(
+          <Grid className="nav-item" item xs={6} sm={3} md={2}>
+          <Button  color={ChangePalette} variant="h6"  sx={{ flexGrow: 1 }}  href={item.link}>{item.title}</Button>
+        </Grid>
+        )
+      })}
+        {/* <Grid className="nav-item" item xs={6} sm={3} md={2}>
           <Button  color="inherit" variant="h6"  sx={{ flexGrow: 1 }}  href="#home">Home</Button>
         </Grid>
         <Grid className="nav-item" item xs={6} sm={3} md={2}>
-          <Button  color="inherit" variant="h6"  sx={{ flexGrow: 1 }} href="#about"> About</Button>
+          <Button  color={ChangePalette} variant="h6"  sx={{ flexGrow: 1 }} href="#about"> About</Button>
         </Grid>
         <Grid className="nav-item" item xs={6} sm={3} md={2}>
-          <Button  color="inherit" variant="h6"  sx={{ flexGrow:1 }} href="#service"> Services </Button>
+          <Button  color={ChangePalette} variant="h6"  sx={{ flexGrow:1 }} href="#service"> Services </Button>
         </Grid>
         <Grid  className="nav-item" item xs={6} sm={3} md={2}>
-          <Button  color="inherit" variant="h6"  sx={{ flexGrow: 1 }}  href="#work"> Projects</Button>
+          <Button  color={ChangePalette} variant="h6"  sx={{ flexGrow: 1 }}  href="#work"> Projects</Button>
         </Grid>
         <Grid className="nav-item" item xs={6} sm={3} md={2}>
-          <Button  color="inherit" variant="h6" sx={{ flexGrow: 1 }} href="#contact">Contact</Button>
+          <Button  color={ChangePalette} variant="h6" sx={{ flexGrow: 1 }} href="#contact">Contact</Button>
         </Grid>
         <Grid className="nav-item" item xs={6} sm={3} md={2}>
-          <Button  color="inherit" variant="h6"  sx={{ flexGrow: 1 }} href="https://antra.com">Antra</Button>
-        </Grid>
+          <Button  color={ChangePalette} variant="h6"  sx={{ flexGrow: 1 }} href="https://antra.com">Antra</Button>
+        </Grid> */}
        
       </Grid>
      

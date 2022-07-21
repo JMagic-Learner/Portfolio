@@ -110,9 +110,6 @@ h6 {
 
 .overlay-mf {
   background-color: #0078ff;
-}
-
-.overlay-mf {
   position: absolute;
   top: 0;
   left: 0px;
@@ -634,7 +631,7 @@ h6 {
   position: absolute;
 }
 
-.intro .overlay-itro {
+.intro .overlay-intro {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
@@ -646,10 +643,11 @@ h6 {
 }
 
 .intro .intro-title {
-  color: black;
+  background-color:black;
   font-weight: 600;
   font-size: 3rem;
   z-index: 2;
+  width:100%;
 }
 
 .intro .intro-subtitle {

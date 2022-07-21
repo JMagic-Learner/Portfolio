@@ -12,14 +12,17 @@ export default function Contact() {
 
     let IconInfo = [
       {
+        id:1,
         information: "2826 44th ST CT NE 98422, TACOMA WA",
         icon: "ion-ios-location"
       },
       {
+        id:2,
         information: "(253) 389-7521",
         icon: "ion-ios-telephone"
       },
       {
+        id:3,
         information: "jmaconsult59@gmail.com",
         icon: "ion-email"
       }
@@ -27,6 +30,7 @@ export default function Contact() {
 
     let InputBox = [
       {
+        id:1,
         type:"text",
         name: "name",
         placeholder: "Your Name",
@@ -34,6 +38,7 @@ export default function Contact() {
         message:"Please enter at least 4 chars"
       },
       {
+        id:2,
         type:"email",
         name: "email",
         placeholder: "Your email",
@@ -41,6 +46,7 @@ export default function Contact() {
         message:"Please enter a valid email"
       },
       {
+        id:3,
         type:"text",
         name: "subject",
         placeholder: "Subject",
@@ -70,7 +76,7 @@ export default function Contact() {
                       <div className="row">
                         {InputBox.map((item)=>{
                           return(
-                            <div className="col-md-12 mb-3">
+                            <div className="col-md-12 mb-3" key={item.id}>
                             <div className="form-group">
                                 <input type={item.type} 
                                        className="form-control" 
@@ -117,7 +123,7 @@ export default function Contact() {
                     <List>
                       {IconInfo.map((item)=> {
                         return(
-                          <ListItem disablePadding>
+                          <ListItem disablePadding key={item.id}>
                             <ListItemButton>
                                 <span className={item.icon}></span>
                                 <ListItemText primary={item.information} />
