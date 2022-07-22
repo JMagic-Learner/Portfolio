@@ -16,7 +16,7 @@ export default function Projects(){
         imageSource: `${Image3}`,
         category:"Internal Component Library",
         date:"13 June. 2022",
-        link:""
+        link:"https://github.com/JMagic-Learner/pat-ui"
       },
       {
         title:"MortgageFlex LOS",
