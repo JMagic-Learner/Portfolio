@@ -23,8 +23,8 @@ export default function Introduction() {
     <div className="intro-content display-table ">
       <div className="table-cell">
         <div className="container">
-          <Typography variant="h1" color="neutral">Jason Ma</Typography>
-          <Typography variant="p" className={`${currentTransition}` + " black"}>{currentText}</Typography>
+          <Typography variant="h1" color="black">Jason Ma</Typography>
+          <Typography variant="p" className={`${currentTransition}`}>{currentText}</Typography>
          <Typography className="pt-3"><a className="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></Typography> 
         </div>
       </div>

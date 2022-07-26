@@ -18,7 +18,7 @@ export default function Contact() {
       },
       {
         id:2,
-        information: "(253) 389-7521",
+        information: "(253) 272-8474",
         icon: "ion-ios-telephone"
       },
       {
