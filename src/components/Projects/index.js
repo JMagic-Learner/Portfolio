@@ -41,7 +41,7 @@ export default function Projects(){
         <div className="col-sm-12">
           <div className="title-box text-center">
             <h3 className="title-a">
-              Projects through employers
+              Professional Projects
             </h3>
             {/* <p className="subtitle-a">
               A collection of prior works
@@ -81,6 +81,9 @@ export default function Projects(){
             )
         })}
       </div>
+      <h3 className="title-a">
+              Personal Project
+            </h3>
       <div className="row">
      
           <div className="work-box">
